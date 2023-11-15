@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b06c10199762311040b9b8e6f053af6a" label="Order Line Attributes" max_length="40" name="x_1111799_att_omt_order_line_attributes" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Attribute Name" max_length="255" name="x_att_attribute_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Attribute Value" max_length="255" name="x_att_attribute_value" type="string"/>
+        <element attributes="encode_utf8=false" label="Order Line Item" max_length="32" name="x_att_order_line_item" reference="sn_ind_tmt_orm_order_line_item" type="reference"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="x_att_order_line_item"/>
+        </index>
+    </element>
+</database>
